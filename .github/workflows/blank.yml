@@ -39,3 +39,8 @@ jobs:
 
       - name: Run tree command
         run: tree /  -L 1 -o output1.txt
+        
+        
+      - name: print the files
+        run: ls -alt
+
