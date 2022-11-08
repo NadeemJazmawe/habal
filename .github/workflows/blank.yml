@@ -46,5 +46,5 @@ jobs:
         
         
       - name: print output.txt file
-        run: cat output.txt
+        run: cat output2.txt
 
