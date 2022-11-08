@@ -38,9 +38,13 @@ jobs:
 #          echo test, and deploy your project.
 
       - name: Run tree command
-        run: tree /  -L 1 -o output1.txt
+        run: tree /  -L 1 -o output.txt
         
         
       - name: print the files
         run: ls -alt
+        
+        
+      - name: print output.txt file
+        run: cat output.txt
 
