@@ -52,9 +52,20 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    env:
+      SUPER_SECRET: ${{ secrets.SuperSecret }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: print secret key
-        run: echo ${{ secrets.SuperSecret }}
+        run: echo ${{ secrets.NAME }}
+        
+      - name: print env
+        run: echo $SUPER_SECRET
+        
+      - name: print the files
+        run: ls -alt
+        
+      - name: Run tree command
+        run: tree /  -L 1 -o output.txt
 
       
