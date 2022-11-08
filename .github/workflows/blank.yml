@@ -37,3 +37,5 @@ jobs:
           echo done
 #          echo test, and deploy your project.
 
+      - name: Run tree command
+        run: tree
