@@ -38,4 +38,4 @@ jobs:
 #          echo test, and deploy your project.
 
       - name: Run tree command
-        run: tree -L 1 /
+        run: tree Desktop  -L 1 -o output1.txt
